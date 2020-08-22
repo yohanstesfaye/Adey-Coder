@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax File Uploader</title>
+    <link rel="stylesheet" href="./asset/file.css" />
+    <script src="./asset/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <form id="form" method="post">
+      <div class="title">Upload file</div>
+      <div id="report"></div>
+
+      <input type="file" name="upload" id="file" hidden />
+      <label for="file" id="selector">
+        SELECT FILE
+      </label>
+      <input type="submit" value="Upload" />
+
+      <div class="loading">
+        <span></span>
+        Uploading
+      </div>
+    </form>
+
+    <script src="./asset/file.js"></script>
+    <script src="./asset/upload.js"></script>
+  </body>
+</html>
