@@ -1,0 +1,124 @@
+:root {
+    --primary: #90ff90;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    max-width: 50vh;
+    padding-block: 48px;
+    margin-bottom: 48px;
+    border-bottom: 2px dashed var(--primary);
+    color: var(--primary);
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.team {
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    margin: 8px;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    position: relative;
+    background-color: #ffffff34;
+}
+
+.team::before {
+    content: '';
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    filter: blur(4px) grayscale(100%);
+}
+
+.team img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 480px;
+    border-radius: 16px;
+    z-index: 3;
+    object-fit: cover;
+    border: none;
+}
+
+.team:hover img {
+    width: 160px;
+    height: 240px;
+    border: 2px solid var(--primary);
+    left: 80px;
+    top: 60px;
+}
+
+.team .info {
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #363636;
+    padding: 16px;
+    border-top: 8px solid var(--primary);
+    border-radius: 50% 50% 0px 0px;
+    padding-top: 80px;
+    text-align: center;
+    transform: scale(2)
+}
+
+.team .name {
+    font-size: 24px;
+    padding: 16px;
+    text-transform: capitalize;
+}
+
+.team .title {
+    color: grey;
+    text-transform: capitalize;
+}
+
+.team:hover .info {
+    transform: scale(1)
+}
+
+.team .social {
+    padding-block: 16px;
+    font-size: 24px;
+}
+
+.team .social i {
+    display: inline-block;
+    width: 48px;
+    padding: 12px;
+    background-color: #ededed;
+    border-radius: 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.team .social i:hover {
+    color: var(--primary);
+    background-color: #363636;
+
+}
