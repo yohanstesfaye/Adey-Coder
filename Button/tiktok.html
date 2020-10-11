@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tik Tok Button</title>
+    <link rel="stylesheet" href="../res/css/center.css" />
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
+    <style>
+        /*will be back*/
+        body {
+            background-color: #010101;
+            color: #010101;
+        }
+
+        button {
+            position: relative;
+            border: none;
+            padding: 12px 29px;
+            font-size: 24px;
+            border-radius: 12px;
+            background-color: white;
+        }
+
+        button::before,
+        button::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            border-radius: 12px;
+            z-index: -1;
+        }
+
+        button::before {
+            background-color: #4de8f4;
+            left: -8px;
+            right: 0;
+        }
+
+        button::after {
+            background-color: #ff3e9e;
+            left: 0;
+            right: -8px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>
+        <i class="fas fa-plus"></i>
+    </button>
+</body>
+
+</html>
