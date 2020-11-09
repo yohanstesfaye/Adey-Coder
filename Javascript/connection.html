@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet Connection</title>
+    <link rel="stylesheet" href="../res/css/center.css" />
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
+    <style>
+      .connection {
+        padding: 20px 24px;
+        background-color: #363636;
+        border-radius: 16px;
+        color: #dddddd;
+        display: flex;
+        box-shadow: 0px 8px 16px #21212146;
+      }
+
+      .connection i {
+        font-size: 24px;
+      }
+
+      .connection div {
+        padding: 4px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="connection">
+      <i id="icon" class="fas fa-exclamation-triangle"></i>
+      <div id="message">Internet Connection Terminated</div>
+    </div>
+    <script src="../res/js/jquery-3.2.1.min.js"></script>
+    <script>
+      setInterval(function () {
+        let i = document.getElementById("icon");
+        let msg = document.getElementById("message");
+        let stat = document.getElementsByClassName("connection")[0].style;
+
+        if (navigator.onLine) {
+          i.classList.remove("fa-exclamation-triangle");
+          i.classList.add("fa-wifi");
+          stat.color = "#55ff55";
+          msg.innerHTML = "Connected to Internet";
+        } else {
+          i.classList.add("fa-exclamation-triangle");
+          i.classList.remove("fa-wifi");
+          stat.color = "#dddddd";
+          msg.innerHTML = "Internet Connection Terminated";
+        }
+      });
+    </script>
+  </body>
+</html>
