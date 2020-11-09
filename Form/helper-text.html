@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form input helper</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #9b6332;
+        font-family: sans-serif;
+      }
+      .input-field {
+        width: 400px;
+        padding: 16px;
+      }
+      .input-field input {
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 8px;
+        color: white;
+        padding: 16px;
+        font-size: 1em;
+        width: 100%;
+        max-width: 100%;
+      }
+      .input-field span {
+        display: none;
+        padding: 8px;
+        color: yellow;
+        line-height: 18px;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+
+      .input-field input:hover,
+      .input-field input:focus {
+        border-color: yellow;
+        color: yellow;
+      }
+      .input-field:focus-within span {
+        display: block;
+        animation: slide 0.25s ease-in-out;
+      }
+      @keyframes slide {
+        0% {
+          margin-top: -16px;
+        }
+        50% {
+          margin-top: 4px;
+        }
+
+        100% {
+          margin-top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="input-field">
+        <input type="text" name="" placeholder="Company Name" id="" />
+        <span> A name that represents your company and service </span>
+      </div>
+
+      <div class="input-field">
+        <input type="email" name="" placeholder="Email Address" id="" />
+        <span> an emil address that used to contact your company </span>
+      </div>
+
+      <div class="input-field">
+        <input type="text" name="" placeholder="Description" id="" />
+        <span>
+          a short and clear statment that describe your company and service
+        </span>
+      </div>
+    </form>
+  </body>
+</html>
