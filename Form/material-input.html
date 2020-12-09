@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Material input</title>
+    <link rel="stylesheet" href="../res/css/center.css" />
+
+    <style>
+      :root {
+        --body: #ffffff;
+        --text: #363636;
+        --text-light: #898989;
+        --primary: #1bbeff;
+        --border: #bbbbbb;
+        --padding: 16px 24px;
+        --line-height: 24px;
+      }
+
+      body {
+        background-color: var(--body);
+      }
+
+      .input-group {
+        width: 360px;
+        position: relative;
+        border: 3px solid var(--border);
+        border-radius: 8px;
+        margin: 32px;
+      }
+      .input-group input {
+        padding: var(--padding);
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        color: var(--text);
+        font-size: 16px;
+        line-height: var(--line-height);
+      }
+
+      .input-group:hover,
+      .input-group:focus-within {
+        border-color: var(--primary);
+      }
+
+      .input-group input:focus,
+      .input-group:hover input {
+        color: var(--primary);
+      }
+
+      .input-group label {
+        position: absolute;
+        background-color: transparent;
+        padding: var(--padding);
+        line-height: var(--line-height);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        color: var(--text-light);
+        cursor: text;
+      }
+
+      .input-group:hover label {
+        color: var(--primary);
+      }
+
+      .input-group:focus-within label,
+      .input-group input:not(:placeholder-shown) ~ label {
+        padding: 0px 8px;
+        background-color: var(--body);
+        top: -12px;
+        left: 16px;
+        bottom: auto;
+        color: var(--text);
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <div class="input-group">
+        <input type="text" name="" id="text1" placeholder=" " />
+        <label for="text1">Text 1</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="" id="text2" placeholder=" " />
+        <label for="text2">Text 2</label>
+      </div>
+    </form>
+  </body>
+</html>
