@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.24s linear;
+    padding: 0;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    --primary: #b8ff67;
+    background-color: var(--primary);
+    background-image: linear-gradient(to left bottom,#ffff00,#6ced6c);
+}
+
+.title {
+    font-size: 44px;
+    padding-bottom: 64px;
+}
+
+form {
+    width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    border: 2px solid #363636;
+    border-radius: 16px;
+    overflow: hidden;
+}
+form:focus-within,
+form:hover {
+    box-shadow: 0px 8px 16px #24242464;
+}
+
+form input {
+    line-height: 24px;
+    padding: 16px;
+    font-size: 1rem;
+    border:none;
+    outline: none;
+}
+
+form input[type='url'] {
+    background-color: #ffffff94;
+}
+
+form input[type='url']:hover,
+form input[type='url']:focus {
+    background-color: #ffffff
+}
+form input[type='submit'] {
+    background-color: #656565;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+form input[type='submit']:hover{
+    background-color: #222222;
+}
+
+.generated {
+    font-size: 32px;
+    padding: 48px 24px;
+    border-radius: 16px;
+    color: #212121;
+    margin-top: 48px;
+    background-color: #ffffff85;
+    width: 720px;
+    text-align: center;
+    position: relative;
+}
+
+.generated button {
+    background-color: transparent;
+    padding: 8px;
+    color: #6b6b6b;
+    border: none;
+    border-radius: 16px;
+    margin-inline: auto;
+    font-size: 1rem;
+    position: absolute;
+    right: 24px;
+    top: 8px;
+    font-size: 32px;
+    cursor: pointer;
+    outline: none;
+    }
+.generated button:hover {
+    color: #242424;
+}

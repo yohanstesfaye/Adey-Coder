@@ -1,0 +1,1 @@
+RewriteRule ^/?(.*)$ redirect.php?token=$1
