@@ -1,13 +1,29 @@
-# Adey-Coder
+# Content
 
-This is Adey Coder's channel on Youtube source code sharing.
+- [Start](#start)
+- [Youtube Channel](#channel)
+- [Contact Me](#contact)
 
-# Channel
+# Adey Coder {#start}
 
-for a coding show videos can be found on my [Channel](https://www.youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw) on youtube
-[Subscribe Now](https://youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw?sub_confirmation=1)
+![Header](./images/header.png)
 
-# Social Media
+This is Adey Coder's channel on Youtube source code sharing. It includes
+
+- Pure **CSS** Animations
+- Website Section
+- HTML forms
+- Cards
+- JavaScript
+- Simple **PHP** projects
+
+# Youtube Channel {#cahnnel}
+
+[**Adey Coder** Channel](https://www.youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw) a website development turorial youtube channel using **HTML**,**CSS**, **JavaScript** and **PHP**.
+
+To get latest Videos on youtube channel [Subscribe Now](https://youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw?sub_confirmation=1)
+
+# Social Media {#contact}
 
 You can find and follow adey coders channel social media accounts
 
