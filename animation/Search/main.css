@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #ffffa0;
+}
+
+.text {
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.loading {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.loading span {
+    position: absolute;
+    border: 2px solid transparent;
+    border-top-color: #242424;
+    border-radius: 50%;
+    animation: spin 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    75%,100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.loading span:nth-child(1),
+.loading span:nth-child(6) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    animation-delay: 0.6s;
+}
+
+.loading span:nth-child(2),
+.loading span:nth-child(7) {
+    width: 64px;
+    height: 64px;
+    top: 8px;
+    left: 8px;
+    animation-delay: 0.45s;
+}
+
+.loading span:nth-child(3),
+.loading span:nth-child(8) {
+    width: 48px;
+    height: 48px;
+    top: 16px;
+    left: 16px;
+    animation-delay: 0.3s;
+}
+
+.loading span:nth-child(4),
+.loading span:nth-child(9) {
+    width: 32px;
+    height: 32px;
+    top: 24px;
+    left: 24px;
+    animation-delay: 0.15s;
+}
+
+.loading span:nth-child(5),
+.loading span:nth-child(10) {
+    width: 16px;
+    height: 16px;
+    top: 32px;
+    left: 32px;
+    animation-delay: 0s;
+}
+
+.loading span:nth-child(6),
+.loading span:nth-child(7),
+.loading span:nth-child(8),
+.loading span:nth-child(9),
+.loading span:nth-child(10) {
+    opacity: 0.25;
+}
+
+.loading span:nth-child(6) {
+    animation-delay: 0.9s;
+}
+
+.loading span:nth-child(7) {
+    animation-delay: 0.75s;
+}
+
+.loading span:nth-child(8) {
+    animation-delay: 0.6s;
+}
+.loading span:nth-child(9) {
+    animation-delay: 0.45s;
+}
+
+.loading span:nth-child(10) {
+    animation-delay: 0.3s;
+}
