@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassy social media buttons</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: sans-serif;
+        transition: all 0.35s linear;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ffffff;
+        background-size: cover;
+        background-image: linear-gradient(
+          to right bottom,
+          #fde0e0,
+          #fde0e6,
+          #fce1ec,
+          #f9e2f2,
+          #f4e4f8,
+          #e9e7ff,
+          #dcebff,
+          #d1eeff,
+          #bdf4ff,
+          #adfaf9,
+          #aafee7,
+          #b7ffcd
+        );
+      }
+      .social {
+        text-align: center;
+      }
+      .social span {
+        position: relative;
+        margin: 16px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .social span::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: var(--color);
+        background-image: var(--image);
+        border-radius: 35%;
+        width: 56px;
+        height: 56px;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s linear;
+      }
+
+      .social i {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        border-radius: 16px;
+        border: 1px solid #ffffff34;
+        width: 72px;
+        height: 72px;
+        backdrop-filter: blur(16px) brightness(108%);
+        z-index: 2;
+        color: #242424;
+        box-shadow: 0px 0px 0px #0000001b;
+      }
+      .social span:hover::after {
+        opacity: 1;
+        top: -8px;
+        left: -8px;
+        transform: rotateZ(45deg);
+      }
+      .social span:hover i {
+        transition: all 0.2s linear;
+        color: white;
+        box-shadow: 0px 8px 16px #0000001f;
+        border-color: #ffffff74;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social">
+      <span style="--color: #3b5998">
+        <i class="fab fa-facebook-f"></i>
+      </span>
+      <span style="--color: #00acee">
+        <i class="fab fa-twitter"></i>
+      </span>
+      <span style="--color: #ff0000">
+        <i class="fab fa-youtube"></i>
+      </span>
+
+      <span
+        style="
+          --image: linear-gradient(
+            to right bottom,
+            #4c68d7,
+            #815dc8,
+            #a253b5,
+            #b84aa0,
+            #c64589,
+            #d34a7c,
+            #dc526f,
+            #e25d62,
+            #ed6f5b,
+            #f58355,
+            #fa9851,
+            #fbad50
+          );
+        "
+      >
+        <i class="fab fa-instagram"></i>
+      </span>
+      <span style="--color: #25d366">
+        <i class="fab fa-whatsapp"></i>
+      </span>
+      <span style="--color: #0088cc">
+        <i class="fab fa-telegram-plane"></i>
+      </span>
+      <span style="--color: #6441a5">
+        <i class="fab fa-twitch"></i>
+      </span>
+    </div>
+  </body>
+</html>

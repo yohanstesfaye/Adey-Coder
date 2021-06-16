@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    transition: all 0.35s linear;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 24px;
+    color: white;
+}
+
+body {
+    background-image: url('../res/image/Colors.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    max-width: 900px;
+    background-color: #ffffff35;
+    backdrop-filter: blur(5px);
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    border-radius: 16px;
+    grid-gap: 24px;
+}
+
+.product img {
+    width: 360px;
+    object-fit: cover;
+}
+
+.product .info {
+    padding-block: 32px;
+}
+
+.name,
+.price,
+.quantity{
+    font-size: 32px;
+    padding-bottom: 32px;
+}
+
+.info label {
+    font-size: 1rem;
+    display: block;
+    padding-bottom: 16px;
+}
+
+.info .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info .colors {
+    padding-block: 32px;
+}
+
+.colors span {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-right: -16px;
+    border-radius: 50%;
+    background-color: var(--color);
+    border: 1px solid white;
+}
+
+.product button {
+    background-color: #d3ada2;
+    border: none;
+    padding: 16px 32px;
+    margin-right: 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product i {
+    margin-right: 16px;
+    color: inherit;
+}
+
+.product button.cart {
+    color: #212121;
+    background-color: white;
+}
+
+.product button:hover {
+    box-shadow: 0px 8px 12px #21212135;
+}
