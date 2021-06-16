@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+    background-color: #fff5f5;
+}
+
+.big {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+#second {
+    background-image: linear-gradient(
+        to bottom,
+        #800d0d1b 65%,
+        #fff5f5 82%
+    );
+    font-size: 30rem;
+    font-weight: 700;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 8rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.countdown .counter {
+    display: inline-block;
+    padding: 2rem;
+    margin: 0 1rem;
+    text-align: center;
+    width: 15vw;
+    color: #800d0d;
+}
+
+.countdown .counter div {
+    font-size: 8rem;
+}
+
+.countdown label {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.message .text {
+    font-size: 1.5rem;
+    color: #cc1515;
+    margin: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.message form {
+    width: 40vw;
+    border: 2px solid #cc1515;
+    display: grid;
+    grid-template-columns: 1fr 10rem;
+    overflow: hidden;
+    margin: auto;
+}
+
+.message form:hover,
+.message form:focus-within {
+    border-color: #800d0d;
+}
+        
+.message form input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #cc1515;
+}
+
+.message form input[type='submit']{
+    background-color: #CC1515;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.message form input[type='submit']:hover {
+    background-color: #800D0D;
+}
+
+@media screen and (max-width: 1024px){
+    .countdown label,
+    .message .text {
+        font-size: 1rem;
+    }
+    
+    .message form {
+        grid-template-columns: 1fr 8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #second {
+        font-size: 16rem;
+    }
+
+    .countdown .counter {
+        width: 40vw;
+    }
+
+    .countdown .counter div {
+        font-size: 2rem;
+    }
+
+    .message form {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    #second {
+        font-size: 20rem;
+    }
+
+    .countdown .counter {
+        width: 15vw;
+    }
+
+    .countdown .counter div {
+        font-size: 3rem;
+    }
+
+    .message form {
+        width: 60vw;
+    }
+}

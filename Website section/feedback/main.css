@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+}
+
+section {
+    background-image: linear-gradient(to bottom left,#00A9FF,#FF0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    width: 100vw;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+section::before,section::after {
+    content: "";
+    width: 20vw;
+    height: 20vw;
+    opacity: 0.08;
+    border: 0.25rem solid #f14f4f;
+    position: absolute;
+    border-radius: 50%;
+}
+
+section::before {
+    left: -8vw;
+    top: -5vh;
+}
+
+section::after {
+    right: -5vw;
+    bottom: -8vh;
+}
+
+section header {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+    color: #f14f4f;
+    font-weight: 600;
+}
+
+.content #message {
+    padding: 2rem 0.5rem;
+    max-width: 800px;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin: auto;
+    width: 100%;
+    color: #5f5f5f;
+}
+
+.content #message::before,
+.content #message::after {
+    font-size: 2rem;
+    color: #f14f4f;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.content #message::before {
+    content: "\275B\275B";
+}
+
+.content #message::after {
+    content: "\275C\275C";
+}
+
+.content #author {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    color: #f14f4f;
+    font-weight: 600;
+}
+
+.content #job {
+    color: #787878;
+}
+
+.feedback #client {
+    padding-top: 3rem;
+}
+
+.feedback #client button {
+    display: inline-block;
+    margin: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback #client button img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    filter: grayscale(1);
+    padding: 0.25rem;
+    transform: scale(0.8);
+}
+
+.feedback #client button:hover img,
+.feedback #client button.active img {
+    border-color: #f14f4f;
+    filter: grayscale(0);
+    transform: scale(1);
+    box-shadow: 0px 0.5rem 1rem #f14f4f40;
+
+}

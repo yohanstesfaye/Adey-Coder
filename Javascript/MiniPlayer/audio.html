@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Audio Player</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <audio id="player" src="./TheFatRat - Electrified.m4a"></audio>
+    <div class="player">
+      <div class="control">
+        <i class="fas fa-play" id="playbtn"></i>
+      </div>
+      <div class="info">
+        TheFatRat - Electrified
+        <div class="bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <div id="current">0:00</div>
+    </div>
+
+    <script src="./player.js"></script>
+  </body>
+</html>

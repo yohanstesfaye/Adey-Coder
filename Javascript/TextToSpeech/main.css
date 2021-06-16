@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+}
+
+body {
+    background-image: linear-gradient(to top left,#242424,#000000);
+    height: 100vh;
+    color: white;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    padding: 72px;
+    padding-bottom: 48px;
+}
+
+.title strong {
+    font-weight: bold;
+    font-size: 80px;
+    display: block;
+}
+
+strong {
+    color: yellow;
+}
+
+article {
+    margin: auto;
+    padding: 16px 24px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    max-width: 800px;
+}
+
+article p {
+    margin: 24px 0px;
+}
+
+.control {
+    position: absolute;
+    right: 128px;
+    bottom: 128px;
+}
+
+.control #read {
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    z-index: 3;
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+    color: #363636;
+    border: 3px solid #242424;
+}
+
+.bounce {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+    transform-origin: 50% 50%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    animation: bounce 1s linear infinite;
+}
+
+.bounce.bt2 {
+    border-color: #ffff55;
+    animation-delay: 0.2s;
+}
+.bounce.bt3 {
+    border-color: #00ff22;
+    animation-delay: 0.4s;
+}
+.bounce.bt4 {
+    border-color: #00ccff;
+    animation-delay: 0.6s;
+}
+.bounce.bt5 {
+    border-color: #b84eff;
+    animation-delay: 0.8s;
+}
+
+.control #animation {
+    display: none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+    
+    80% {
+        transform: scaleX(180%) scaleY(25%);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(200%) scaleY(100%);
+        opacity: 0.05;
+    }
+}
