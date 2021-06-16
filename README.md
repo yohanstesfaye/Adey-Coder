@@ -1,9 +1,3 @@
-# Content
-
-- [Start](#start)
-- [Youtube Channel](#channel)
-- [Contact Me](#contact)
-
 # Adey Coder {#start}
 
 ![Header](./images/header.png)
