@@ -11,8 +11,12 @@ for a coding show videos can be found on my [Channel](https://www.youtube.com/ch
 
 You can find and follow adey coders channel social media accounts
 
+[Youtube](https://youtube.com/c/adeycoder)
+
 [Facebook](https://fb.me/adeycoder)
 
 [Twitter](https://twitter.com/adey_coder)
 
 [Telegram](https://t.me/adeycoder)
+
+[Tiktok](https://tiktok.com/@adeycoder)
