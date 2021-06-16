@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="./animation.css" />
+    <style>
+      .circle {
+        width: 120px;
+        height: 120px;
+        position: relative;
+      }
+
+      .circle span {
+        position: absolute;
+        border-width: 4px;
+        border-style: solid;
+        border-color: transparent #20d178;
+        border-radius: 50%;
+        animation: rotate1 2s linear infinite;
+      }
+
+      .circle span:nth-child(1) {
+        width: 120px;
+        height: 120px;
+        top: 0;
+        left: 0;
+        animation-delay: 0ms;
+      }
+      .circle span:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        left: 10px;
+        animation-delay: 100ms;
+      }
+
+      .circle span:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        left: 20px;
+        animation-delay: 200ms;
+      }
+
+      .circle span:nth-child(4) {
+        width: 60px;
+        height: 60px;
+        top: 30px;
+        left: 30px;
+        animation-delay: 300ms;
+      }
+
+      @keyframes rotate1 {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>
