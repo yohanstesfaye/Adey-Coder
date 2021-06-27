@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  place-content: end;
+  flex-direction: column;
+  height: 100vh;
+}
+
+:root {
+  --bg: #24aa94;
+  --bg-light: #24aa9444;
+  --text: white;
+  --hover: #ffff00;
+  --light: #ffff0031;
+}
+
+footer {
+  background-color: var(--bg-light);
+  line-height: 24px;
+  color: var(--text)
+}
+
+footer .art {
+  background-color: var(--bg);
+  padding: 16px;
+  padding-top: 48px;
+  clip-path: polygon(0% 5%, 15% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+footer .content {
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+footer header {
+  font-size: 21px;
+  padding-block: 16px;
+}
+
+footer .content a {
+  display: block;
+  padding-block: 12px;
+  color: var(--text);
+  opacity: 0.65;
+}
+
+footer .content a:hover {
+  opacity: 1;
+  color: var(--hover);
+  font-size: 18px;
+}
+
+footer input {
+  border-style: solid;
+  line-height: 24px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  width: 100%;
+  margin-block: 8px;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+footer input[type='email'] {
+  background-color: transparent;
+  border-color: var(--text);
+  color: var(--text);
+}
+
+footer input[type='email']:hover,
+footer input[type='email']:focus {
+  border-color: var(--hover);
+  color: var(--hover);
+}
+
+footer input[type='submit'] {
+  background-color: var(--text);
+  color: var(--bg);
+  text-transform: uppercase;
+  border: none;
+}
+
+footer input[type='submit']:hover {
+  background-color: var(--hover)
+}
+
+footer .social {
+  margin-block: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+}
+
+footer .social i {
+  font-size: 32px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid var(--light);
+  border-radius: 8px;
+  width: 100%;
+}
+
+footer .social i:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+  box-shadow: 0px 0px 16px inset var(--light);
+}
+
+footer .notice {
+  text-align: center;
+  padding: 24px;
+}
+
+footer .notice strong {
+  color: var(--hover);
+  text-transform: uppercase;
+}
