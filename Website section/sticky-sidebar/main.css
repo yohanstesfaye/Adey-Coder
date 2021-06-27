@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.35s linear;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    --primary: #55cc55;
+}
+
+.containt {
+    margin-left: 72px;
+    color: #454545;
+}
+
+.containt header {
+    font-size: 72px;
+    font-weight: 500;
+    text-align: center;
+    margin-block: 72px;
+    color: var(--primary)
+}
+
+.containt .text {
+    line-height: 24px;
+    font-size: 1rem;
+    padding: 24px;
+}
+
+.bar {
+    color: #999999;
+    width: 64px;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 72px 1fr 72px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.bar > div, .bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar i {
+    font-size: 18px;
+}
+
+.bar label {
+    position: absolute;
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 4px 0px 8px #36363624;
+    left: 80px;
+    padding: 8px 24px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 14px;
+    z-index: 2;
+    display: none;
+}
+
+.bar label::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -24px;
+    width: 24px;
+    background-color: var(--primary);
+    clip-path: polygon(35% 50%,100% 0%,100% 100%);
+}
+
+.bar .logo img {
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+    border-radius: 50%;
+}
+
+.bar ul {
+    margin: 0px;
+    list-style: none;
+}
+
+.bar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+}
+
+.bar li:hover,.active {
+    color: var(--primary);
+}
+
+.bar li:hover label,.bar .setting:hover label,.active label {
+    display: block;
+    animation: slide-left 0.35s linear;
+}
+
+.bar li:hover i,.active i {
+    font-size: 24px;
+}
+
+.bar .setting:hover i {
+    transform: rotateZ(45deg);
+    font-size: 24px;
+    color: var(--primary);
+}
+
+@keyframes slide-left {
+    0% {
+        margin-left: 8px;
+        opacity: 0.35;
+    }
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
