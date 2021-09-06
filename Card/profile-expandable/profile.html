@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="../../res/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./profile.css" />
+  </head>
+  <body>
+    <section>
+      <div class="profile">
+        <div class="card" onClick="view()">
+          <div class="imgBox">
+            <img src="./pexels-creation-hill-1681010.jpg" alt="" />
+          </div>
+          <div class="detail">
+            <label class="name">Alex Jano</label>
+            <label class="job">Security Expert</label>
+          </div>
+          <div class="action">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="info">
+          <div class="action">
+            <button class="message">
+              <i class="fas fa-comments"></i>
+              Send Message
+            </button>
+            <button class="follow">
+              <i class="fas fa-user-plus"></i>
+              Follow
+            </button>
+          </div>
+          <div class="about">
+            I am a Security expert with experince of more than 8 years working
+            on the top Technology companys such as.Google, Facebook...
+          </div>
+          <div class="social">
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      profile = document.querySelector(".profile").classList;
+
+      var view = function () {
+        if (profile.contains("active")) {
+          profile.remove("active");
+        } else {
+          profile.add("active");
+        }
+      };
+    </script>
+  </body>
+</html>

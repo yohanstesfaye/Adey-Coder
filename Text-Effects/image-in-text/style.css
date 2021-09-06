@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.clip {
+  font-size: 128px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 100px;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+}
+
+.nature {
+  background-image: url("beautiful_nature.jpg");
+}
+
+.flame {
+  background-image: url("f.jpg");
+}

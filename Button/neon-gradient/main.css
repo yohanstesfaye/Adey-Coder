@@ -1,0 +1,43 @@
+ * {
+     margin: 0;
+     padding: 0;
+     transition: all 0.35s linear;
+     font-family: sans-serif;
+     box-sizing: border-box;
+ }
+
+ section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     height: 100vh;
+     background-color: #101010;
+ }
+
+ .neon {
+     padding: 1.5rem 2.5rem;
+     margin: 1rem 2rem;
+     border-width: 1px;
+     border-style: solid;
+     border-color: #00ff00 #ffff00 #ffff00 #00ff00;
+     border-radius: 3rem;
+     font-size: 1.5rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     cursor: pointer;
+     color: transparent;
+     background-image: linear-gradient(to bottom right, #00ff00, #ffff00);
+     background-clip: text;
+     box-shadow: -2px -2px 0.5rem #00ff0086,
+         2px 2px 0.5rem inset #00ff0086,
+         2px 2px 0.5rem #ffff0086,
+         -2px -2px 0.5rem inset #ffff0086;
+ }
+
+ .neon:hover {
+     color: #101010;
+     background-clip: border-box;
+     box-shadow: -0.5rem -0.25rem 1.5rem #00ff008f,
+         0.5rem 0.25rem 1.5rem #ffff008f;
+ }

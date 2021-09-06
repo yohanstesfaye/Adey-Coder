@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.35s linear;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #177f6c;
+}
+
+.profile {
+    width: 24rem;
+    color: #242424;
+}
+
+.profile .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 5rem 1fr 4rem;
+    grid-gap: 1rem;
+    padding: 1.25rem 0.5rem;
+}
+
+.card .imgBox {
+    display: grid;
+    place-content: center;
+}
+
+.card .imgBox img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.25rem solid #67afac;
+}
+
+.card label {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.card .name {
+    margin-bottom: 0.25rem;
+}
+
+.card .job {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.card .action {
+    display: grid;
+    place-content: center;
+}
+
+.card i {
+    font-size: 1.25rem;
+}
+
+.profile.active .card i {
+    transform: rotateZ(180deg);
+}
+
+.profile .info {
+    margin-top: 1rem;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.25s linear;
+}
+
+.profile.active .info {
+    height: 250px;
+}
+
+.info div {
+    margin-bottom: 1rem;
+}
+
+.info .action {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    grid-gap: 1rem;
+}
+
+.info .action button {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    color: #454545;
+}
+
+.info .action button i {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.info .action button:hover {
+    color: #101010;
+    border-radius: 2rem;
+    text-decoration: underline;
+}
+
+.info .action button.message {
+    background-color: #ffff70;
+}
+
+.info .action button.follow {
+    background-color: #87ffcc;
+}
+
+.info .about {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.info .social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.info .social i {
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #454545;
+}
+
+.info .social i:hover {
+    color: #101010;
+    background-color: #87ffcc;
+}

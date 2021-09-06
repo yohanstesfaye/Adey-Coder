@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WaveSurfer Media player</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="player">
+        <div class="thumb">
+          <img src="./Parallax.png" alt="" />
+        </div>
+        <div class="info">
+          <div class="detail">
+            <div class="title">
+              TheFatRat - Upwind
+              <div class="time">
+                <span id="current">0:00</span> /
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+            <div class="control">
+              <i class="fi-rr-play" id="playPause"></i>
+            </div>
+          </div>
+          <div id="wave"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./media.js"></script>
+  </body>
+</html>

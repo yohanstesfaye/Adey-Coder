@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+    font-family: "poppins", sans-serif;
+    outline: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+section > div {
+    background-color: white;
+    width: 320px;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid #dcdcdc;
+}
+
+section > div:hover {
+    box-shadow: 0px 1rem 2rem #24242436;
+}
+
+section > div::before {
+    content: '';
+    position: absolute;
+    bottom: 7rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    top: 9rem;
+    border: 2px solid var(--color,#363636);
+    transition: all 0.35s linear;
+    transform: rotateZ(3deg);
+    border-radius: 0.75rem;
+}
+
+section > div:hover::before {
+    transform: rotateZ(0deg);
+    bottom: -0.5rem;
+    top: -0.5rem;
+}
+
+section .overlay {
+    padding: 2rem 1rem;
+}
+
+section > div:hover .overlay {
+    color: var(--color,#363636);
+}
+
+section .title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+section .price {
+    padding-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+section .price strong {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+section ul {
+    padding: 2rem 3rem;
+    text-align: left;
+    list-style-type: square;
+}
+
+section ul li {
+    padding: 0.5rem;
+    color: #535353;
+    text-transform: capitalize;
+}
+
+section > div:hover ul li {
+    color: #242424;
+}
+
+section .action {
+    padding-block: 2rem;
+}
+
+section .action button {
+    padding: 0.75rem 3rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: #363636;
+    color: #ededed;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+
+section .action button::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 2px solid var(--color,#363636);
+    border-radius: 0.5rem;
+    transition: all 0.35s linear;
+    opacity: 0;
+}
+
+section .action button:hover::before {
+    top: -0.25rem;
+    bottom: -0.25rem;
+    left: -0.25rem;
+    right: -0.25rem;
+    opacity: 1;
+}
+
+section .action button:hover {
+    background-color: var(--color,#363636);
+    color: white;
+}
+
+section .starter {
+    --color: #3C39FF;
+}
+
+section .standard {
+    --color: #00B9A0;
+}
+
+section .premium {
+    --color: #E24A4A
+}
