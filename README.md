@@ -5,12 +5,12 @@
 This is Adey Coder's channel on Youtube source code sharing. It includes
 
 - Pure **CSS** Animations
-- Website Section
 - HTML forms
 - Cards
 - JavaScript
 - Simple **PHP** projects
 - **Glassmorphism** designs using CSS Only
+- Website Section
 
 # Youtube Channel
 
