@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    transition: all 0.35s linear;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("./image/raya-and-the-last-dragon-bg.jpg");
+    background-size: cover;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    grid-gap: 32px;
+    backdrop-filter: blur(12px) contrast(80%);
+    color: white;
+}
+
+.info {
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.poster {
+    width: 480px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.poster img {
+    width: 480px;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
+}
+
+.poster img:hover {
+    transform: scale(1.35) rotateZ(5deg);
+}
+
+.info > div {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-right: 32px;
+}
+
+.movie-title {
+    font-size: 64px;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #00ffff,#00ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.movie-detail .set {
+    display: inline-block;
+    margin-right: 64px
+}
+
+.movie-detail label {
+    font-size: 14px;
+    color: #ededed;
+    display: block;
+}
+
+.movie-detail span {
+    font-size: 22px;
+}
+
+.movie-description {
+    line-height: 24px;
+}
+
+.movie-cast .header {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.movie-cast .list {
+    display: grid;
+    grid-template-columns: repeat(6,120px);
+    grid-gap: 32px;
+}
+
+.movie-cast .cast {
+    width: 120px;
+    height: 160px;
+    cursor: pointer;
+}
+
+.movie-cast img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid #cccccc;
+}
+
+.movie-cast .cast:hover img {
+    border-width: 0px;
+    transform: scale(1.1) rotateZ(-2deg);
+    box-shadow: -4px 4px 16px #00ffff,
+        4px -4px 16px #00ff00;
+}
+
+.movie-cast label {
+    margin-top: 8px;
+    display: block;
+}
+
+.movie-cast .cast:hover label {
+    margin-top: 24px;
+    color: #00ff00;
+    font-weight: medium;
+}

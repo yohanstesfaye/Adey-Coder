@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customizable Light Bar</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="light"></div>
+
+      <div class="control">
+        <input type="range" value="1" min="1" max="25" id="range" />
+        <div id="color">
+          <span
+            onclick="lightColor(this)"
+            style="background-color: #ffffff; color: #ffffff5f"
+          ></span>
+          <span
+            onclick="lightColor(this)"
+            style="background-color: #00ff00; color: #00ff005f"
+          ></span>
+          <span
+            onclick="lightColor(this)"
+            style="background-color: #ffff00; color: #ffff005f"
+          ></span>
+          <span
+            onclick="lightColor(this)"
+            style="background-color: #0077ff; color: #0077ff5f"
+          ></span>
+          <span
+            onclick="lightColor(this)"
+            style="background-color: #ff0000; color: #ff00005f"
+          ></span>
+        </div>
+      </div>
+    </section>
+    <script src="./light.js"></script>
+  </body>
+</html>

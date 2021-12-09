@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #212121;
+}
+
+.shadow {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #292929;
+    margin: 1rem;
+    font-size: 2rem;
+    display: grid;
+    place-content: center;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.shadow:hover {
+    color: #00ff00;
+    box-shadow: 0.5rem 0.5rem 0.5rem #1118,
+        inset 0.5rem 0.5rem 1rem #fff1,
+        inset -0.5rem -0.5rem 1rem #111a;
+}

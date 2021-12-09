@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colored switch</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="switch">
+        <div class="text on">ON</div>
+        <div class="text off">OFF</div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <script>
+      var btn = document.querySelector(".switch");
+
+      btn.addEventListener("click", function (e) {
+        if (btn.classList.contains("active")) {
+          btn.classList.remove("active");
+        } else {
+          btn.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

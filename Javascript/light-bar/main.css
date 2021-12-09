@@ -1,0 +1,89 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+
+.light {
+    width: 20rem;
+    height: 1rem;
+    border: 0.35rem solid #fff5;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.light.on {
+    border-color: var(--bc, white);
+    box-shadow: 0 0 var(--blur, 2rem) var(--spread, 1rem) var(--bsc, #fff5),
+        inset 0 0 var(--blur, 2rem) var(--bsc, #fff5);
+}
+
+.control {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    grid-gap: 2rem;
+    background-color: #242424;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 30rem;
+    position: absolute;
+    bottom: 4rem;
+}
+
+.control #color {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem
+}
+
+.control #color span {
+    display: inline-block;
+    height: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.control input {
+    width: 100%;
+    background-color: transparent;
+}
+
+.control input::-moz-range-progress {
+    background-color: #00ff00;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.control input::-moz-range-track {
+    background-color: #454545;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.control input::-moz-range-thumb {
+    background-color: #242424;
+    border: 0.25rem solid #00ff00;
+    border-radius: 1rem;
+    height: 1rem;
+    width: 1rem;
+    cursor: grab;
+    transition: all 0.35s linear;
+}
+
+.control input:hover::-moz-range-thumb {
+    background-color: #55bb55;
+    border-color: #242424;
+    cursor: grabbing;
+}

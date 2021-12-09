@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+    transition: all 0.5s linear;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #ededed;
+}
+
+.business-card {
+    width: 640px;
+    height: 360px;
+    position: relative;
+}
+
+.business-card .front,
+.business-card .back {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.business-card .front {
+    background-color: #ffbb90;
+    color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.business-card:hover .front {
+    transform: perspective(700px) rotateX(180deg);
+}
+
+.business-card .front img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+.business-card .front .company {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.business-card .front::before {
+    content: "";
+    border-radius: 50%;
+    border: 8px solid #24242420;
+    position: absolute;
+    top: -25%;
+    height: 150%;
+    width: 320px;
+    transform: rotateZ(35deg);
+}
+
+.business-card .back {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    transform: perspective(700px) rotateX(-180deg);
+}
+
+.business-card:hover .back {
+    transform: perspective(700px) rotateX(0deg);
+}
+
+.business-card .back .image,
+.business-card .back .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.business-card .back .image {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #ffbb90;
+    color: #242424;
+    align-items: center;
+}
+
+.business-card .back .image img {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    border: 2px solid #242424;
+    border-radius: 50%;
+    padding: 4px;
+    margin-bottom: 16px;
+}
+
+.business-card .back .image h1 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-block: 8px;
+}
+
+.business-card .back .image h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.business-card .back .info {
+    align-items: flex-start;
+    color: #ffbb90;
+}
+
+.business-card .back .info .contact {
+    line-height: 32px;
+    margin-block: 8px;
+}
+
+.business-card .back .info .contact i {
+    font-size: 18px;
+    margin-right: 16px;
+}
