@@ -1,8 +1,8 @@
-# Adey Coder
+# Hi there 👋
 
 ![Header](./images/header.png)
 
-This is Adey Coder's channel on Youtube source code sharing. It includes
+Welcome to [**Adey Coder**](https://www.youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw) youtube channel source code place. you can get/download free codes here. To get latest Videos on youtube channel [Subscribe Now](https://youtube.com/c/AdeyCoder?sub_confirmation=1). Adeu Coder channel tutorials focuses on
 
 - Pure **CSS** Animations
 - HTML forms
@@ -12,22 +12,29 @@ This is Adey Coder's channel on Youtube source code sharing. It includes
 - **Glassmorphism** designs using CSS Only
 - Website Section
 
-## Youtube Channel
+## Buy and Support my work
 
-[**Adey Coder** Channel](https://www.youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw) a website development turorial youtube channel using **HTML**,**CSS**, **JavaScript** and **PHP**.
+If want to support my work or buy a source codes you can use this
 
-To get latest Videos on youtube channel [Subscribe Now](https://youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw?sub_confirmation=1)
+- ☕ BuyMeACoffee:  <https://www.buymeacoffee.com/adeycoder>
 
-## Social Media
+- ☕ Ko-fi: <https://ko-fi.com/adeycoder>
 
-You can find and follow adey coders channel social media accounts
+## Free Source Codes
 
-[Youtube](https://youtube.com/c/adeycoder)
+you can find a free source codes below respositories categorized a easy access.
 
-[Facebook](https://fb.me/adeycoder)
+## Links
 
-[Twitter](https://twitter.com/adey_coder)
+you can find Adey Coder social media
 
-[Telegram](https://t.me/adeycoder)
+- Youtube channel - <https://youtube.com/c/adeycoder>
+- Facebook page - <https://fb.me/adeycoder>
+- Twitter - <https://twitter.com/adey_coder>
+- Instagram - <https://instagram.com/adeycoder>
+- Tiktok - <https://tiktok.com/@adeycoder>
+- Telegram
 
-[Tiktok](https://tiktok.com/@adeycoder)
+  - Channel - <https://t.me/adeycoder>
+  - Group - <https://t.me/adeycoderchat>
+  - Bot - <https://t.me/adeycoderbot>
