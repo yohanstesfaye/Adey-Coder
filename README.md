@@ -12,13 +12,13 @@ This is Adey Coder's channel on Youtube source code sharing. It includes
 - **Glassmorphism** designs using CSS Only
 - Website Section
 
-# Youtube Channel
+## Youtube Channel
 
 [**Adey Coder** Channel](https://www.youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw) a website development turorial youtube channel using **HTML**,**CSS**, **JavaScript** and **PHP**.
 
 To get latest Videos on youtube channel [Subscribe Now](https://youtube.com/channel/UCMLW2jB9h4aewOPJnESD9pw?sub_confirmation=1)
 
-# Social Media
+## Social Media
 
 You can find and follow adey coders channel social media accounts
 
