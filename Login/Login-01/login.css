@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.35s linear;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #073350;
+    --light-golden: #ffda74;
+    --transparent-golden: #ffda7437;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.login {
+    margin: 1.5rem;
+}
+
+.login a {
+    color: var(--light-golden);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login a:hover,
+.login a:focus {
+    color: white;
+    text-decoration: underline wavy var(--light-golden);
+}
+
+.login header {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--light-golden);
+    font-family: 'Monoton', cursive;
+    margin-bottom: 2.5rem;
+}
+
+.login .field {
+    margin-block: 1.5rem;
+}
+
+.login label {
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.login input {
+    display: block;
+    padding: 0.75rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: white;
+    max-width: 360px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #fffa;
+    outline: none;
+}
+
+.login input:hover,
+.login input:focus {
+    color: var(--light-golden);
+    background-color: var(--transparent-golden);
+    border-color: var(--light-golden);
+}
+
+.login .reset {
+    text-align: right;
+}
+
+.login button {
+    padding: 0.75rem 2rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid var(--light-golden);
+    margin-top: 1.5rem;
+    background-color: var(--light-golden);
+    color: var(--dark-blue);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login button:hover,
+.login button:focus {
+    background-color: var(--transparent-golden);
+    color: var(--light-golden);
+}
+
+.login .create {
+    margin-top: 2.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.login a {
+    display: block;
+}
